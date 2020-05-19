@@ -1,0 +1,1 @@
+["sbt.Task[scala.collection.Seq[scala.Tuple2[java.nio.file.Path, sbt.nio.FileStamp]]]",{"hashes":[["/home/kacper/Komponentowe/scala-translator-app/build.sbt","d753651f2c54d4b57572aee36c3f8b541e4b8899"],["/home/kacper/Komponentowe/scala-translator-app/project/plugins.sbt","97b2992a9d5f073f77bbadc4b82b353a246ff89a"]],"lastModifiedTimes":[]}]

@@ -1,0 +1,22 @@
+version: '3'
+services:
+  translator-react-app:
+    image: kstopa225/translator-react-app:0.1
+    container_name: react-app
+    ports:
+      - 3000:80
+    links:
+      - translator-scala-app
+
+  translator-scala-app:
+    image: kstopa225/scalatranslator:0.1
+    container_name: scala-app
+    network_mode: "host"
+    ports:
+      - 8080:8080
+
+  translator-python-app:
+    image: kstopa225/translator-python-app:0.1
+    container_name: python-app
+    ports:
+      - 8081:8081
