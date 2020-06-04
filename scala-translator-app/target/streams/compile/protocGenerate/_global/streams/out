@@ -1,5 +1,0 @@
-[0m[[0m[0minfo[0m] [0m[0mCompiling 1 protobuf files to /home/kacper/Komponentowe/scala-translator-app/target/scala-2.13/src_managed/main[0m
-[0m[[0m[0mdebug[0m] [0m[0mprotoc options:[0m
-[0m[[0m[0minfo[0m] [0m[0mCompiling schema /home/kacper/Komponentowe/scala-translator-app/src/main/protobuf/translator.proto[0m
-[0m[[0m[0minfo[0m] [0m[0mCompiling protobuf[0m
-[0m[[0m[0minfo[0m] [0m[0mProtoc target directory: /home/kacper/Komponentowe/scala-translator-app/target/scala-2.13/src_managed/main[0m
