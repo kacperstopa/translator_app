@@ -8,7 +8,7 @@ import org.http4s.server.blaze.BlazeServerBuilder
 import org.http4s.server.middleware.{CORS, Logger}
 import pl.edu.agh.grpc.GrpcTranslationService
 import pl.edu.agh.http.Routes
-import pl.edu.agh.services.TranslationService
+import pl.edu.agh.services.{HistoryService, HistoryServiceImpl, TranslationService}
 
 import scala.concurrent.ExecutionContext.global
 
@@ -19,9 +19,10 @@ object TranslationServer {
       client <- BlazeClientBuilder[F](global).stream
 
       translationService: TranslationService[F] = new GrpcTranslationService[F]
+      historyService: HistoryService[F] = new HistoryServiceImpl[F]()
 
       httpApp = (
-        Routes.routes[F](translationService)
+        Routes.routes[F](translationService, historyService)
       ).orNotFound
 
       finalHttpApp = Logger.httpApp(true, true)(httpApp)

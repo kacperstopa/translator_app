@@ -9,7 +9,7 @@ services:
       - translator-scala-app
 
   translator-scala-app:
-    image: kstopa225/scalatranslator:0.1
+    image: kstopa225/translator-scala-app:0.1
     container_name: scala-app
     network_mode: "host"
     ports:
